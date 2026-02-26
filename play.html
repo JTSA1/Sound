@@ -3,17 +3,18 @@
 <head>
 <style>
 body { background: black; margin: 0; padding: 0; }
+button { opacity: 0; }
 </style>
 </head>
 <body>
-<audio autoplay controls>
+<audio id="audio">
 <source src="https://raw.githubusercontent.com/JTSA1/Sound/main/correct_3.mp3" type="audio/mpeg">
 </audio>
+<button id="btn" onclick="document.getElementById('audio').play()">Play</button>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var audio = document.querySelector('audio');
-  audio.play();
-});
+window.onload = function() {
+  document.getElementById('btn').click();
+}
 </script>
 </body>
 </html>
