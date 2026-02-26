@@ -6,8 +6,14 @@ body { background: black; margin: 0; padding: 0; }
 </style>
 </head>
 <body>
-<audio autoplay>
+<audio autoplay controls>
 <source src="https://raw.githubusercontent.com/JTSA1/Sound/main/correct_3.mp3" type="audio/mpeg">
 </audio>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var audio = document.querySelector('audio');
+  audio.play();
+});
+</script>
 </body>
 </html>
